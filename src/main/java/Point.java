@@ -11,7 +11,7 @@ public class Point extends Shape {
     }
 
     @Override
-    void show() {
+    public void show() {
         System.out.println(toString());
     }
 

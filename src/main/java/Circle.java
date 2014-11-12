@@ -2,12 +2,22 @@
  *
  */
 public class Circle extends Shape {
-    public Circle(String name, double radius) {
+    private double radius;
+    private Point center;
+
+    public Circle(String name, Point center, double radius) {
         super(name);
+        this.center = center;
+        this.radius = radius;
     }
 
     @Override
     void show() {
-        // TODO: показать
+        System.out.println(toString());
     }
+
+        public String toString() {
+            return name + " (" + center.toString() + "; Радиус круга: " + radius + "))";
+    }
+
 }
