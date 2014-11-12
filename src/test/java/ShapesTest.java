@@ -25,9 +25,8 @@ public class ShapesTest {
                 triangle,
                 new Point("Просто точка", 1, 2),
                 new Rectangle("Прямоугольник",
-                        new Point("Левый верхний угол", 10, 20),
-                        new Point("Правый нижний угол", 100, 230)
-                ),
+                    new Point("Левый верхний угол", 10, 20),
+                    new Point("Правый нижний угол", 100, 230)),
         };
 
         for (Shape shape : shapes) {

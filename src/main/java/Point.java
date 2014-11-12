@@ -2,7 +2,17 @@
  * Точка
  */
 public class Point extends Shape {
-    private double x, y;
+    private double x;
+    private double y;
+
+    public double getX() {
+        return x;
+    }
+
+    public double getY() {
+        return y;
+    }
+
 
     public Point(String name, double x, double y) {
         super(name);
