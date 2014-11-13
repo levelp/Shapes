@@ -2,11 +2,12 @@
  * Created by d.tyufanov on 12.11.2014.
  */
 public class Rhombus extends Shape{
-    Point topConner;
-    double diagonal1, diagonal2;
+    private Point topConner;
+    private double diagonal1, diagonal2;
 
     public Rhombus (String name, Point topConner, double diagonal1, double diagonal2) {
         super(name);
+        this.topConner = topConner;
         this.diagonal1 = diagonal1;
         this.diagonal2 = diagonal2;
     }

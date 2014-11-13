@@ -2,8 +2,8 @@
  * Created by d.tyufanov on 12.11.2014.
  */
 public class Square extends Shape{
-    Point leftTop;
-    double side;
+    private Point leftTop;
+    private double side;
 
     public Square (String name, Point leftTop, double side) {
         super(name);

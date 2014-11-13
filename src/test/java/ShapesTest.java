@@ -21,12 +21,33 @@ public class ShapesTest {
                 new Point("C", 6, 7)
         );
 
+        Circle circle = new Circle("Круг",
+                new Point("Центр", 3, 3),
+                12);
+
+        Line line = new Line("Линия",
+                new Point("A", 8, 8),
+                new Point("B", 0, 0));
+
+        Rhombus rhombus = new Rhombus("Ромб",
+                new Point("Вершина", 15, 30),
+                18,
+                39);
+
+        Square square = new Square("Квадрат",
+                new Point("Врхняя левая вершина", 0, 0),
+                10);
+
         Shape[] shapes = {
                 triangle,
                 new Point("Просто точка", 1, 2),
                 new Rectangle("Прямоугольник",
                     new Point("Левый верхний угол", 10, 20),
                     new Point("Правый нижний угол", 100, 230)),
+                circle,
+                line,
+                rhombus,
+                square
         };
 
         for (Shape shape : shapes) {

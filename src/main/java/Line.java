@@ -2,7 +2,7 @@
  * Created by d.tyufanov on 12.11.2014.
  */
 public class Line extends Shape {
-    Point p1,p2;
+    private Point p1,p2;
 
     public Line (String name, Point p1, Point p2) {
         super(name);

@@ -2,7 +2,8 @@
  * Прямоугольник
  */
 public class Rectangle extends Shape {
-    Point leftTop, righBottom;
+    private Point leftTop, righBottom;
+
     public Rectangle(String name, Point leftTop, Point rightBottom) {
         super(name);
         this.leftTop = leftTop;

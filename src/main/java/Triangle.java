@@ -2,7 +2,8 @@
  * Треугольник
  */
 public class Triangle extends Shape {
-    Point p1,p2,p3;
+    private Point p1,p2,p3;
+
     public Triangle(String name, Point p1, Point p2, Point p3) {
         super(name);
         this.p1 = p1;
