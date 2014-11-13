@@ -15,24 +15,35 @@ public class ShapesTest {
     @Test
     public void shapesArray() {
         // Треугольник
-        Triangle triangle = new Triangle("Треугольник 1",
+        Triangle triangle = new Triangle("Triangle",
                 new Point("A", 1, 2),
                 new Point("B", 4, 5),
                 new Point("C", 6, 7)
         );
 
+        //круг
+        Circle circle = new Circle("Circle", new Point("center",5,5), 8);
+
+        //конус
+        Romb romb = new Romb("Romb",new Point("center",0,0),2,4);
+
         Shape[] shapes = {
                 triangle,
-                new Point("Просто точка", 1, 2),
-                new Rectangle("Прямоугольник",
-                        new Point("Левый верхний угол", 10, 20),
-                        new Point("Правый нижний угол", 100, 230)
+                new Point("Point", 1, 2),
+                new Rectangle("Rectangle",
+                        new Point("left top", 10, 20),
+                        new Point("right bottom", 100, 10)
                 ),
+                circle,
+                romb
         };
 
         for (Shape shape : shapes) {
             shape.show();
         }
+
+        //площадь ромба
         // assertEquals();
+        System.out.println("area: "+ romb.area());
     }
 }

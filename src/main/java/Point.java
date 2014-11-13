@@ -10,6 +10,14 @@ public class Point extends Shape {
         this.y = y;
     }
 
+    public double getX() {
+        return this.x;
+    }
+    public double getY() {
+        return this.y;
+    }
+
+
     @Override
     void show() {
         System.out.println(toString());
