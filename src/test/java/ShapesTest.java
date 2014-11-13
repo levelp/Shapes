@@ -27,6 +27,7 @@ public class ShapesTest {
                 new Rectangle("Прямоугольник",
                         new Point("Левый верхний угол", 10, 20),
                         new Point("Правый нижний угол", 100, 230)
+
                 ),
         };
 
@@ -35,4 +36,4 @@ public class ShapesTest {
         }
         // assertEquals();
     }
-}
+}//test KBV
