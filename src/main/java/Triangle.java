@@ -2,12 +2,24 @@
  * Треугольник
  */
 public class Triangle extends Shape {
+
+    private final Point p1;
+    private final Point p2;
+    private final Point p3;
+
     public Triangle(String name, Point p1, Point p2, Point p3) {
         super(name);
+        this.p1 = p1;
+        this.p2 = p2;
+        this.p3 = p3;
     }
 
     @Override
     void show() {
-        // TODO: показать
+        System.out.println(this.toString());
+    }
+
+    public String toString() {
+        return "Название: " + this.name + ";\nКоординаты: " + p1.toString() + ", " + p2.toString() + ", " + p3.toString() + ".";
     }
 }

@@ -28,6 +28,7 @@ public class ShapesTest {
                         new Point("Левый верхний угол", 10, 20),
                         new Point("Правый нижний угол", 100, 230)
                 ),
+                new Circle("Круг", 5, new Point("Центр", 0, 0))
         };
 
         for (Shape shape : shapes) {
