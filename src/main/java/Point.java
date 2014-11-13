@@ -1,6 +1,3 @@
-/**
- * Точка
- */
 public class Point extends Shape {
     private double x, y;
 
@@ -11,11 +8,16 @@ public class Point extends Shape {
     }
 
     @Override
-    void show() {
-        System.out.println(toString());
+    public String toString() {
+        return "Point{" +
+                "name=" + name +
+                ", x=" + x +
+                ", y=" + y +
+                '}';
     }
 
-    public String toString() {
-        return name + " (" + x + "; " + y + ")";
+    @Override
+    void show() {
+        System.out.println(toString());
     }
 }
