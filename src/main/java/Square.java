@@ -17,6 +17,6 @@ public class Square extends Shape {
     }
 
     public String toString() {
-        return name + " (" + leftTop.toString() + "; Длина сторны квадрата " + sideLength + ")";
+        return name + " (" + leftTop.toString() + "; Длина сторны квадрата: " + sideLength + ")";
     }
 }
