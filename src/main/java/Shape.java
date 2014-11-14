@@ -11,5 +11,8 @@ public abstract class Shape {
     /**
      * Имя фигуры и все параметры
      */
+    abstract double calcSquare();
+    abstract double calcPerimeter();
     abstract void show();
+
 }

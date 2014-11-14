@@ -11,6 +11,24 @@ public class Point extends Shape {
     }
 
     @Override
+    double calcSquare() {
+        return 0;
+    }
+
+    @Override
+    double calcPerimeter() {
+        return 0;
+    }
+
+    double getX(){
+        return x;
+    }
+
+    double getY(){
+        return y;
+    }
+
+    @Override
     void show() {
         System.out.println(toString());
     }
