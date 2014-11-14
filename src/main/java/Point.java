@@ -4,6 +4,14 @@
 public class Point extends Shape {
     private double x, y;
 
+    public double getX() {
+        return x;
+    }
+
+    public double getY() {
+        return y;
+    }
+
     public Point(String name, double x, double y) {
         super(name);
         this.x = x;

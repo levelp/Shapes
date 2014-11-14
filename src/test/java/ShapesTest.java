@@ -25,10 +25,12 @@ public class ShapesTest {
                 triangle,
                 new Point("Просто точка", 1, 2),
                 new Rectangle("Прямоугольник",
-                        new Point("Левый верхний угол", 10, 20),
-                        new Point("Правый нижний угол", 100, 230)
+                        new Point("", 10, 20),
+                        new Point("", 100, 230)
+
 
                 ),
+                new Circle("Круг", 10, new Point("", 50, 50))
         };
 
         for (Shape shape : shapes) {
