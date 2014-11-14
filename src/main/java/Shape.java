@@ -4,6 +4,11 @@
 public abstract class Shape {
     protected final String name;
 
+    /**
+     * Конструктор класса Shape
+     *
+     * @param name имя фигуры
+     */
     public Shape(String name) {
         this.name = name;
     }
@@ -11,5 +16,10 @@ public abstract class Shape {
     /**
      * Имя фигуры и все параметры
      */
-    abstract void show();
+    public void show() {
+        System.out.println(toString());
+    }
+
+    @Override
+    abstract public String toString();
 }

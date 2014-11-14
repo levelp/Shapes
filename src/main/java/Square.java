@@ -12,7 +12,7 @@ public class Square extends Shape {
     }
 
     @Override
-    void show() {
+    public void show() {
         System.out.println(toString());
     }
 

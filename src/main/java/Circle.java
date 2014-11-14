@@ -1,5 +1,5 @@
 /**
- *
+ * Круг (окружность)
  */
 public class Circle extends Shape {
     private double radius;
@@ -12,12 +12,12 @@ public class Circle extends Shape {
     }
 
     @Override
-    void show() {
+    public void show() {
         System.out.println(toString());
     }
 
-        public String toString() {
-            return name + " (" + center.toString() + "; Радиус круга: " + radius + "))";
+    public String toString() {
+        return name + " (" + center.toString() + "; Радиус круга: " + radius + "))";
     }
 
 }

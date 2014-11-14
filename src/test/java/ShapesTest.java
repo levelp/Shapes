@@ -1,3 +1,4 @@
+import org.junit.Assert;
 import org.junit.Test;
 
 /**
@@ -21,7 +22,7 @@ public class ShapesTest {
                 new Point("C", 6, 7)
         );
         //Точка
-        Point point = new Point ("Точка", 1.0, 2.0);
+        Point point = new Point("Точка", 1.0, 2.0);
 
         //Прямоугольник
         Rectangle rectangle = new Rectangle("Прямоугольник",
@@ -34,7 +35,7 @@ public class ShapesTest {
                 25);
         //Квадрат
         Square square = new Square("Квадрат",
-                new Point("Левый верхний угол", 2,20), 50);
+                new Point("Левый верхний угол", 2, 20), 50);
 
         Shape[] shapes = {
                 triangle,
@@ -48,5 +49,11 @@ public class ShapesTest {
             shape.show();
         }
         // assertEquals();
+    }
+
+    @Test
+    public void testPointToString() {
+        Point point = new Point("A", 1, 2);
+        Assert.assertEquals("A (1.0; 2.0)", point.toString());
     }
 }

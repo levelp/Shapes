@@ -1,8 +1,8 @@
 /**
- * Точка
+ * Точка 2D
  */
 public class Point extends Shape {
-    private double x, y;
+    protected double x, y;
 
     public Point(String name, double x, double y) {
         super(name);
