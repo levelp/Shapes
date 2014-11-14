@@ -15,7 +15,7 @@ public class ShapesTest {
     @Test
     public void shapesArray() {
         // Треугольник
-        //777
+        //77777
         Triangle triangle = new Triangle("Треугольник 1",
                 new Point("A", 1, 2),
                 new Point("B", 4, 5),
