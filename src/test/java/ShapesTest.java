@@ -1,3 +1,4 @@
+import org.junit.Assert;
 import org.junit.Test;
 
 /**
@@ -36,6 +37,12 @@ public class ShapesTest {
         for (Shape shape : shapes) {
             shape.show();
         }
-        // assertEquals();
+    }
+        @Test
+        public void testPointToString () {
+        Point point = new Point("a", 20, 30);
+        Assert.assertEquals("a (20.0; 30.0)", point.toString());
+
+
     }
 }

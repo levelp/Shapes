@@ -2,7 +2,7 @@
  * Точка
  */
 public class Point extends Shape {
-    private double x, y;
+    protected double x, y;
 
     public double getX() {
         return x;
@@ -23,7 +23,8 @@ public class Point extends Shape {
         System.out.println(toString());
     }
 
-    public String toString() {
-        return name + " (" + x + "; " + y + ")";
-    }
+   public String toString() {
+       return name + " (" + x + "; " + y + ")";
+   }
+
 }
